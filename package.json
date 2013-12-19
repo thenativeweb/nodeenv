@@ -4,7 +4,6 @@
   "description": "nodeenv enables tests to control the NODE_ENV variable.",
   "author": "Golo Roden <golo.roden@thenativeweb.io> (http://www.thenativeweb.io)",
   "main": "lib/nodeenv.js",
-  "private": true,
   "dependencies": {
   },
   "devDependencies": {
