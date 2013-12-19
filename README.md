@@ -24,6 +24,8 @@ nodeenv('dev', function () {
 });
 ```
 
+Once the callback returns, the previous value of `NODE_ENV` is automatically restored.
+
 ## Running the tests
 
 nodeenv has been developed using TDD. To run the tests, go to the folder where you have installed nodeenv to and run `npm test`. You need to have [mocha](https://github.com/visionmedia/mocha) installed.
