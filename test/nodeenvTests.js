@@ -15,6 +15,12 @@ suite('nodeenv', function () {
     }, is.throwing());
   });
 
+  test('does not throw an exception if an empty NODE_ENV value is given.', function () {
+    assert.that(function () {
+      nodeenv('', function () {});
+    }, is.not.throwing());
+  });
+
   test('throws an exception if no callback is given.', function () {
     assert.that(function () {
       nodeenv('dev', undefined);
