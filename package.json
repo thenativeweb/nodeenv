@@ -1,6 +1,6 @@
 {
   "name": "nodeenv",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "nodeenv enables tests to control Node.js environment variables.",
   "contributors": [
     {
@@ -9,8 +9,7 @@
     }
   ],
   "main": "lib/nodeenv.js",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "grunt": "0.4.5",
     "node-assertthat": "0.2.0",
