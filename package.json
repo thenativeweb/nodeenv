@@ -1,23 +1,24 @@
 {
   "name": "nodeenv",
-  "version": "0.0.2",
-  "description": "nodeenv enables tests to control the NODE_ENV variable.",
-  "author": "Golo Roden <golo.roden@thenativeweb.io> (http://www.thenativeweb.io)",
+  "version": "0.0.0",
+  "description": "nodeenv enables tests to control Node.js environment variables.",
+  "contributors": [
+    {
+      "name": "Golo Roden",
+      "email": "golo.roden@thenativeweb.io"
+    }
+  ],
   "main": "lib/nodeenv.js",
   "dependencies": {
   },
   "devDependencies": {
-    "grunt": "0.4.1",
-    "grunt-contrib-jshint": "0.7.1",
-    "grunt-contrib-watch": "0.5.3",
-    "grunt-mocha-test": "0.7.0",
-    "node-assertthat": "0.0.21"
-  },
-  "scripts": {
-    "test": "mocha"
+    "grunt": "0.4.5",
+    "node-assertthat": "0.2.0",
+    "tourism": "0.3.1"
   },
   "repository": {
     "type": "git",
     "url": "git://github.com/thenativeweb/nodeenv.git"
-  }
+  },
+  "license": "MIT"
 }
