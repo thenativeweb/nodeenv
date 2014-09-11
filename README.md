@@ -25,6 +25,17 @@ nodeenv('NODE_ENV', 'dev', function (done) {
 
 Once you call `done`, the previous value of the environment variable is restored.
 
+### Setting the NODE_ENV variable
+
+In case you want to control the `NODE_ENV` environment variable there's a shortcut you may use: In this case you can skip the key and simply provide the value.
+
+```javascript
+nodeenv('dev', function (done) {
+  // ...
+  done();
+});
+```
+
 ## Running the build
 
 This module can be built using [Grunt](http://gruntjs.com/). Besides running the tests, this also analyses the code. To run Grunt, go to the folder where you have installed nodeenv and run `grunt`. You need to have [grunt-cli](https://github.com/gruntjs/grunt-cli) installed.
