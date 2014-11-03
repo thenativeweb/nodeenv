@@ -17,22 +17,24 @@ var nodeenv = require('nodeenv');
 Then, you can call the `nodeenv` function and specify the key of the environment variable you would like to set as well as its new value and a callback that contains the code that shall be run.
 
 ```javascript
-nodeenv('NODE_ENV', 'dev', function (done) {
+nodeenv('NODE_ENV', 'dev', function (restore) {
   // ...
-  done();
+  restore();
 });
 ```
 
-Once you call `done`, the previous value of the environment variable is restored.
+If you specify `undefined` as value, the environment variable is removed if it currently exists. You can use this to make sure that an environment variable is not set.
+
+Once you call `restore`, the previous value of the environment variable is restored.
 
 ### Setting the NODE_ENV variable
 
 In case you want to control the `NODE_ENV` environment variable there's a shortcut you may use: In this case you can skip the key and simply provide the value.
 
 ```javascript
-nodeenv('dev', function (done) {
+nodeenv('dev', function (restore) {
   // ...
-  done();
+  restore();
 });
 ```
 
