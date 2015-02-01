@@ -8,13 +8,28 @@ nodeenv enables tests to control Node.js environment variables.
 
 ## Quick start
 
-To use nodeenv you need to integrate it to your unit-tests using the `require` function.
+To use nodeenv you need to integrate it in your application.
 
 ```javascript
 var nodeenv = require('nodeenv');
 ```
 
-Then, you can call the `nodeenv` function and specify the key of the environment variable you would like to set as well as its new value and a callback that contains the code that shall be run.
+Then, to set environment variables, call the `nodeenv` function and provide an object whose keys are the environment variables' names and the values are their values. If you set a value to `undefined`, the environment variable will be removed.
+
+```javascript
+nodeenv({
+  NODE_ENV: 'dev'
+}, function (restore) {
+  // ...
+  restore();
+});
+```
+
+Once you call `restore`, the previous values of the environment variables will be restored.
+
+### Setting a single variable
+
+If you only want to set a single environment variable, you can specify its key and value without needing an object.
 
 ```javascript
 nodeenv('NODE_ENV', 'dev', function (restore) {
@@ -23,13 +38,9 @@ nodeenv('NODE_ENV', 'dev', function (restore) {
 });
 ```
 
-If you specify `undefined` as value, the environment variable is removed if it currently exists. You can use this to make sure that an environment variable is not set.
+### Settint NODE_ENV
 
-Once you call `restore`, the previous value of the environment variable is restored.
-
-### Setting the NODE_ENV variable
-
-In case you want to control the `NODE_ENV` environment variable there's a shortcut you may use: In this case you can skip the key and simply provide the value.
+If you only want to set the `NODE_ENV` environment variable you only need to provide the value and the `nodeenv` function will take care of the rest.
 
 ```javascript
 nodeenv('dev', function (restore) {
@@ -47,7 +58,7 @@ This module can be built using [Grunt](http://gruntjs.com/). Besides running the
 ## License
 
 The MIT License (MIT)
-Copyright (c) 2013-2014 the native web.
+Copyright (c) 2013-2015 the native web.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
