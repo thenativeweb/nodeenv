@@ -38,7 +38,7 @@ nodeenv('NODE_ENV', 'dev', function (restore) {
 });
 ```
 
-### Settint NODE_ENV
+### Setting NODE_ENV
 
 If you only want to set the `NODE_ENV` environment variable you only need to provide the value and the `nodeenv` function will take care of the rest.
 
