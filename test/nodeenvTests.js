@@ -7,23 +7,23 @@ var nodeenv = require('../lib/nodeenv');
 /*eslint-disable no-process-env*/
 suite('nodeenv', function () {
   setup(function () {
-    assert.that(process.env.foo, is.undefined());
-    assert.that(process.env.NODE_ENV, is.undefined());
+    assert.that(process.env.foo).is.undefined();
+    assert.that(process.env.NODE_ENV).is.undefined();
   });
 
   teardown(function () {
-    assert.that(process.env.foo, is.undefined());
-    assert.that(process.env.NODE_ENV, is.undefined());
+    assert.that(process.env.foo).is.undefined();
+    assert.that(process.env.NODE_ENV).is.undefined();
   });
 
   test('is a function.', function (done) {
-    assert.that(nodeenv, is.ofType('function'));
+    assert.that(nodeenv).is.ofType('function');
     done();
   });
 
   test('sets NODE_ENV when no key is given.', function (done) {
     nodeenv('bar', function (restore) {
-      assert.that(process.env.NODE_ENV, is.equalTo('bar'));
+      assert.that(process.env.NODE_ENV).is.equalTo('bar');
       restore();
       done();
     });
@@ -31,7 +31,7 @@ suite('nodeenv', function () {
 
   test('sets an environment variable when a key and a value are given.', function (done) {
     nodeenv('foo', 'bar', function (restore) {
-      assert.that(process.env.foo, is.equalTo('bar'));
+      assert.that(process.env.foo).is.equalTo('bar');
       restore();
       done();
     });
@@ -42,8 +42,8 @@ suite('nodeenv', function () {
       foo: 'bar',
       baz: 'bas'
     }, function (restore) {
-      assert.that(process.env.foo, is.equalTo('bar'));
-      assert.that(process.env.baz, is.equalTo('bas'));
+      assert.that(process.env.foo).is.equalTo('bar');
+      assert.that(process.env.baz).is.equalTo('bas');
       restore();
       done();
     });
@@ -51,7 +51,7 @@ suite('nodeenv', function () {
 
   test('removes an environment variable that is set to undefined.', function (done) {
     nodeenv('foo', undefined, function (restore) {
-      assert.that(process.env.foo, is.undefined());
+      assert.that(process.env.foo).is.undefined();
       restore();
       done();
     });
@@ -62,8 +62,8 @@ suite('nodeenv', function () {
       foo: undefined,
       baz: undefined
     }, function (restore) {
-      assert.that(process.env.foo, is.undefined());
-      assert.that(process.env.baz, is.undefined());
+      assert.that(process.env.foo).is.undefined();
+      assert.that(process.env.baz).is.undefined();
       restore();
       done();
     });
