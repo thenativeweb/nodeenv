@@ -1,6 +1,6 @@
 {
   "name": "nodeenv",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "nodeenv enables tests to control Node.js environment variables.",
   "contributors": [
     {
