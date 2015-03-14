@@ -6,14 +6,15 @@ var nodeenv = require('../lib/nodeenv');
 
 /*eslint-disable no-process-env*/
 suite('nodeenv', function () {
+  var originalNodeEnv;
+
   setup(function () {
-    assert.that(process.env.foo).is.undefined();
-    assert.that(process.env.NODE_ENV).is.undefined();
+    originalNodeEnv = process.env.NODE_ENV;
+    process.env.NODE_ENV = undefined;
   });
 
   teardown(function () {
-    assert.that(process.env.foo).is.undefined();
-    assert.that(process.env.NODE_ENV).is.undefined();
+    process.env.NODE_ENV = originalNodeEnv;
   });
 
   test('is a function.', function (done) {
