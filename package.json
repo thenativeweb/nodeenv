@@ -23,5 +23,9 @@
     "type": "git",
     "url": "git://github.com/thenativeweb/nodeenv.git"
   },
+  "keywords": [
+    "environment",
+    "nodeenv"
+  ],
   "license": "MIT"
 }
