@@ -39,8 +39,9 @@ var nodeenv = function nodeenv(key, value) {
 
       if (!backupValue) {
         Reflect.deleteProperty(process.env, backupKey);
+      } else {
+        process.env[backupKey] = backupValue;
       }
-      process.env[backupKey] = backupValue;
     });
   };
 
