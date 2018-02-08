@@ -19,9 +19,9 @@
   "main": "dist/nodeenv.js",
   "dependencies": {},
   "devDependencies": {
-    "assertthat": "0.11.0",
-    "roboter": "0.15.4",
-    "roboter-server": "0.15.4"
+    "assertthat": "1.0.0",
+    "roboter": "0.15.6",
+    "roboter-server": "0.15.6"
   },
   "repository": {
     "type": "git",
