@@ -2,7 +2,7 @@
 
 const assert = require('assertthat');
 
-const nodeenv = require('../../lib/nodeenv');
+const nodeenv = require('../../src/nodeenv');
 
 /* eslint-disable no-process-env */
 suite('nodeenv', () => {
