@@ -1,44 +1,38 @@
-'use strict';
-
-const assert = require('assertthat');
-
-const nodeenv = require('../../lib/nodeenv');
+import assert from 'assertthat';
+import nodeenv from '../../lib/nodeenv';
 
 /* eslint-disable no-process-env */
-suite('nodeenv', () => {
-  let originalNodeEnv;
+suite('nodeenv', (): void => {
+  let originalNodeEnv: string | undefined;
 
-  setup(() => {
+  setup((): void => {
     originalNodeEnv = process.env.NODE_ENV;
     process.env.NODE_ENV = undefined;
   });
 
-  teardown(() => {
+  teardown((): void => {
     process.env.NODE_ENV = originalNodeEnv;
   });
 
-  test('is a function.', done => {
+  test('is a function.', async (): Promise<void> => {
     assert.that(nodeenv).is.ofType('function');
-    done();
   });
 
-  test('sets NODE_ENV when no key is given.', done => {
+  test('sets NODE_ENV when no key is given.', async (): Promise<void> => {
     const restore = nodeenv('bar');
 
     assert.that(process.env.NODE_ENV).is.equalTo('bar');
     restore();
-    done();
   });
 
-  test('sets an environment variable when a key and a value are given.', done => {
+  test('sets an environment variable when a key and a value are given.', async (): Promise<void> => {
     const restore = nodeenv('foo', 'bar');
 
     assert.that(process.env.foo).is.equalTo('bar');
     restore();
-    done();
   });
 
-  test('sets multiple environment variables when an object is given.', done => {
+  test('sets multiple environment variables when an object is given.', async (): Promise<void> => {
     const restore = nodeenv({
       foo: 'bar',
       baz: 'bas'
@@ -47,18 +41,16 @@ suite('nodeenv', () => {
     assert.that(process.env.foo).is.equalTo('bar');
     assert.that(process.env.baz).is.equalTo('bas');
     restore();
-    done();
   });
 
-  test('removes an environment variable that is set to undefined.', done => {
+  test('removes an environment variable that is set to undefined.', async (): Promise<void> => {
     const restore = nodeenv('foo', undefined);
 
     assert.that(process.env.foo).is.undefined();
     restore();
-    done();
   });
 
-  test('removes environment variables that are set to undefined.', done => {
+  test('removes environment variables that are set to undefined.', async (): Promise<void> => {
     const restore = nodeenv({
       foo: undefined,
       baz: undefined
@@ -67,7 +59,6 @@ suite('nodeenv', () => {
     assert.that(process.env.foo).is.undefined();
     assert.that(process.env.baz).is.undefined();
     restore();
-    done();
   });
 });
 /* eslint-enable no-process-env */
