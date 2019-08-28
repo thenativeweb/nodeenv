@@ -1,14 +1,18 @@
-'use strict';
+export interface EnvironmentVariables {
+  [key: string]: any | undefined;
+}
 
-/* eslint-disable no-process-env, no-param-reassign */
-const nodeenv = function (key, value) {
-  let environmentVariables;
+/* eslint-disable no-process-env */
+const nodeenv = function (key: string | EnvironmentVariables, value?: any): () => void {
+  let environmentVariables: EnvironmentVariables;
 
   if (typeof key === 'string') {
+    /* eslint-disable no-param-reassign */
     if (arguments.length === 1) {
       value = key;
       key = 'NODE_ENV';
     }
+    /* eslint-enable no-param-reassign */
 
     environmentVariables = {};
     environmentVariables[key] = value;
@@ -18,9 +22,9 @@ const nodeenv = function (key, value) {
 
   environmentVariables = key;
 
-  const backupValues = {};
+  const backupValues: EnvironmentVariables = {};
 
-  Object.keys(environmentVariables).forEach(envKey => {
+  Object.keys(environmentVariables).forEach((envKey: string): void => {
     const envValue = environmentVariables[envKey];
 
     backupValues[envKey] = process.env[envKey];
@@ -32,8 +36,8 @@ const nodeenv = function (key, value) {
     }
   });
 
-  const restore = function () {
-    Object.keys(backupValues).forEach(backupKey => {
+  const restore = function (): void {
+    Object.keys(backupValues).forEach((backupKey: string): void => {
       const backupValue = backupValues[backupKey];
 
       if (!backupValue) {
@@ -48,4 +52,4 @@ const nodeenv = function (key, value) {
 };
 /* eslint-enable no-process-env, no-param-reassign */
 
-module.exports = nodeenv;
+export default nodeenv;
