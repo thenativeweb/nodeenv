@@ -26,7 +26,7 @@
   "devDependencies": {
     "@types/node": "12.7.3",
     "assertthat": "4.0.1",
-    "roboter": "7.1.4"
+    "roboter": "7.1.5"
   },
   "repository": {
     "type": "git",
