@@ -24,7 +24,7 @@
   "types": "build/lib/nodeenv.d.ts",
   "dependencies": {},
   "devDependencies": {
-    "@types/node": "12.7.11",
+    "@types/node": "12.7.12",
     "assertthat": "4.0.2",
     "roboter": "8.1.2"
   },
