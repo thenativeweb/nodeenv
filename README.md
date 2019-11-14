@@ -23,13 +23,13 @@ $ npm install nodeenv
 To use nodeenv you need to integrate it in your application.
 
 ```javascript
-const nodeenv = require('nodeenv').default;
+const { nodeenv } = require('nodeenv');
 ```
 
 If you use TypeScript, use the following code instead:
 
 ```typescript
-import nodeenv from 'nodeenv';
+import { nodeenv } from 'nodeenv';
 ```
 
 Then, to set environment variables, call the `nodeenv` function and provide an object whose keys are the environment variables' names and the values are their values. If you set a value to `undefined`, the environment variable will be removed.

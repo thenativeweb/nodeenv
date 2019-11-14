@@ -1,5 +1,5 @@
 import assert from 'assertthat';
-import nodeenv from '../../lib/nodeenv';
+import { nodeenv } from '../../lib/nodeenv';
 
 /* eslint-disable no-process-env */
 suite('nodeenv', (): void => {

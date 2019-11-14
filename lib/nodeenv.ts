@@ -1,10 +1,6 @@
-export interface EnvironmentVariables {
-  [key: string]: any | undefined;
-}
-
 /* eslint-disable no-process-env */
-const nodeenv = function (key: string | EnvironmentVariables, value?: any): () => void {
-  let environmentVariables: EnvironmentVariables;
+const nodeenv = function (key: string | NodeJS.ProcessEnv, value?: any): () => void {
+  let environmentVariables: NodeJS.ProcessEnv;
 
   if (typeof key === 'string') {
     /* eslint-disable no-param-reassign */
@@ -22,7 +18,7 @@ const nodeenv = function (key: string | EnvironmentVariables, value?: any): () =
 
   environmentVariables = key;
 
-  const backupValues: EnvironmentVariables = {};
+  const backupValues: NodeJS.ProcessEnv = {};
 
   Object.keys(environmentVariables).forEach((envKey: string): void => {
     const envValue = environmentVariables[envKey];
@@ -52,4 +48,4 @@ const nodeenv = function (key: string | EnvironmentVariables, value?: any): () =
 };
 /* eslint-enable no-process-env, no-param-reassign */
 
-export default nodeenv;
+export { nodeenv };
