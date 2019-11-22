@@ -5,12 +5,12 @@ import { nodeenv } from '../../lib/nodeenv';
 suite('nodeenv', (): void => {
   let originalNodeEnv: string | undefined;
 
-  setup((): void => {
+  setup(async (): Promise<void> => {
     originalNodeEnv = process.env.NODE_ENV;
     process.env.NODE_ENV = undefined;
   });
 
-  teardown((): void => {
+  teardown(async (): Promise<void> => {
     process.env.NODE_ENV = originalNodeEnv;
   });
 
