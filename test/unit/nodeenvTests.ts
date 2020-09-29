@@ -44,6 +44,7 @@ suite('nodeenv', (): void => {
   });
 
   test('removes an environment variable that is set to undefined.', async (): Promise<void> => {
+    // eslint-disable-next-line unicorn/no-useless-undefined
     const restore = nodeenv('foo', undefined);
 
     assert.that(process.env.foo).is.undefined();
