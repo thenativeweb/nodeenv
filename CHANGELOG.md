@@ -1,3 +1,10 @@
+## [3.0.26](https://github.com/thenativeweb/nodeenv/compare/3.0.25...3.0.26) (2020-11-03)
+
+
+### Bug Fixes
+
+* Fix headline for robot section in readme. ([#304](https://github.com/thenativeweb/nodeenv/issues/304)) ([509c17f](https://github.com/thenativeweb/nodeenv/commit/509c17fb107a93c87070a48bdead105299c98081))
+
 ## [3.0.25](https://github.com/thenativeweb/nodeenv/compare/3.0.24...3.0.25) (2020-10-29)
 
 
