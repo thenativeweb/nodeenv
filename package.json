@@ -23,7 +23,7 @@
   "main": "build/lib/nodeenv.js",
   "types": "build/lib/nodeenv.d.ts",
   "dependencies": {
-    "@types/node": "14.14.14"
+    "@types/node": "14.14.16"
   },
   "devDependencies": {
     "assertthat": "5.2.5",
