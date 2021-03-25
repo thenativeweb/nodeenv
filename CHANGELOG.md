@@ -1,3 +1,10 @@
+## [3.0.48](https://github.com/thenativeweb/nodeenv/compare/3.0.47...3.0.48) (2021-03-25)
+
+
+### Bug Fixes
+
+* Migrate from master to main. ([#415](https://github.com/thenativeweb/nodeenv/issues/415)) ([13ded31](https://github.com/thenativeweb/nodeenv/commit/13ded31f4600872f445d0534a0d6aa9035dea197))
+
 ## [3.0.47](https://github.com/thenativeweb/nodeenv/compare/3.0.46...3.0.47) (2021-03-19)
 
 
