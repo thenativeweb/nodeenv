@@ -1,3 +1,10 @@
+## [3.0.52](https://github.com/thenativeweb/nodeenv/compare/3.0.51...3.0.52) (2021-04-23)
+
+
+### Bug Fixes
+
+* bump @types/node from 14.14.39 to 14.14.41 ([#428](https://github.com/thenativeweb/nodeenv/issues/428)) ([9f6ba7c](https://github.com/thenativeweb/nodeenv/commit/9f6ba7c7dc71a9064496475152eea8dd4d43734e))
+
 ## [3.0.51](https://github.com/thenativeweb/nodeenv/compare/3.0.50...3.0.51) (2021-04-18)
 
 
