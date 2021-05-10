@@ -1,3 +1,10 @@
+## [3.0.55](https://github.com/thenativeweb/nodeenv/compare/3.0.54...3.0.55) (2021-05-10)
+
+
+### Bug Fixes
+
+* bump hosted-git-info from 2.8.8 to 2.8.9 ([#437](https://github.com/thenativeweb/nodeenv/issues/437)) ([8cab5bd](https://github.com/thenativeweb/nodeenv/commit/8cab5bdd73c889bacbdbfd4197cd230710492dc3))
+
 ## [3.0.54](https://github.com/thenativeweb/nodeenv/compare/3.0.53...3.0.54) (2021-05-06)
 
 
