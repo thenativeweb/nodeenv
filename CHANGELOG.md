@@ -1,3 +1,10 @@
+## [3.0.57](https://github.com/thenativeweb/nodeenv/compare/3.0.56...3.0.57) (2021-05-24)
+
+
+### Bug Fixes
+
+* bump @types/node from 15.3.0 to 15.6.0 ([#441](https://github.com/thenativeweb/nodeenv/issues/441)) ([0b78bdb](https://github.com/thenativeweb/nodeenv/commit/0b78bdb710f98bbf8e858cb7c6b28863fd559738))
+
 ## [3.0.56](https://github.com/thenativeweb/nodeenv/compare/3.0.55...3.0.56) (2021-05-17)
 
 
