@@ -1,3 +1,10 @@
+## [3.0.60](https://github.com/thenativeweb/nodeenv/compare/3.0.59...3.0.60) (2021-06-08)
+
+
+### Bug Fixes
+
+* bump trim-newlines from 3.0.0 to 3.0.1 ([#454](https://github.com/thenativeweb/nodeenv/issues/454)) ([e735417](https://github.com/thenativeweb/nodeenv/commit/e735417197c51aef38f6f39d86a53d47afa73ada))
+
 ## [3.0.59](https://github.com/thenativeweb/nodeenv/compare/3.0.58...3.0.59) (2021-06-07)
 
 
