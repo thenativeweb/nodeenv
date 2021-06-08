@@ -1,3 +1,10 @@
+## [3.0.61](https://github.com/thenativeweb/nodeenv/compare/3.0.60...3.0.61) (2021-06-08)
+
+
+### Bug Fixes
+
+* bump glob-parent from 5.1.1 to 5.1.2 ([#453](https://github.com/thenativeweb/nodeenv/issues/453)) ([a37fde5](https://github.com/thenativeweb/nodeenv/commit/a37fde5d964b370179ce2bff134177f4a22f6cfd))
+
 ## [3.0.60](https://github.com/thenativeweb/nodeenv/compare/3.0.59...3.0.60) (2021-06-08)
 
 
