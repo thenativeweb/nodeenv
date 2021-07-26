@@ -1,6 +1,6 @@
 {
   "name": "nodeenv",
-  "version": "3.0.66",
+  "version": "3.0.67",
   "description": "nodeenv enables tests to control Node.js environment variables.",
   "contributors": [
     {
@@ -23,7 +23,7 @@
   "main": "build/lib/nodeenv.js",
   "types": "build/lib/nodeenv.d.ts",
   "dependencies": {
-    "@types/node": "16.3.3"
+    "@types/node": "16.4.3"
   },
   "devDependencies": {
     "assertthat": "6.3.7",
