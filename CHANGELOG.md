@@ -1,3 +1,10 @@
+## [3.0.67](https://github.com/thenativeweb/nodeenv/compare/3.0.66...3.0.67) (2021-07-26)
+
+
+### Bug Fixes
+
+* bump @types/node from 16.3.3 to 16.4.3 ([#471](https://github.com/thenativeweb/nodeenv/issues/471)) ([6d4aac9](https://github.com/thenativeweb/nodeenv/commit/6d4aac9985fe303693af3b946309d61537c2b479))
+
 ## [3.0.66](https://github.com/thenativeweb/nodeenv/compare/3.0.65...3.0.66) (2021-07-19)
 
 
