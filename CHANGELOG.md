@@ -1,3 +1,10 @@
+## [3.0.70](https://github.com/thenativeweb/nodeenv/compare/3.0.69...3.0.70) (2021-08-16)
+
+
+### Bug Fixes
+
+* bump path-parse from 1.0.6 to 1.0.7 ([#479](https://github.com/thenativeweb/nodeenv/issues/479)) ([93c22cf](https://github.com/thenativeweb/nodeenv/commit/93c22cf03d55e1d9000acf300b85737cc3e1b99c))
+
 ## [3.0.69](https://github.com/thenativeweb/nodeenv/compare/3.0.68...3.0.69) (2021-08-09)
 
 
