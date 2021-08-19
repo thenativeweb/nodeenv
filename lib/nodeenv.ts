@@ -46,6 +46,6 @@ const nodeenv = function (key: string | NodeJS.ProcessEnv, value?: any): () => v
 
   return restore;
 };
-/* eslint-enable no-process-env, no-param-reassign */
+/* eslint-enable no-process-env */
 
 export { nodeenv };
