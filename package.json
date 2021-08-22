@@ -20,6 +20,7 @@
       "email": "hannes.leutloff@thenativeweb.io"
     }
   ],
+  "private": false,
   "main": "build/lib/nodeenv.js",
   "types": "build/lib/nodeenv.d.ts",
   "dependencies": {
@@ -27,9 +28,10 @@
   },
   "devDependencies": {
     "assertthat": "6.3.12",
-    "roboter": "11.7.8",
+    "roboter": "12.1.2",
     "semantic-release-configuration": "2.0.5"
   },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git://github.com/thenativeweb/nodeenv.git"
