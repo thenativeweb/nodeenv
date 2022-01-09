@@ -1,3 +1,10 @@
+## [3.0.72](https://github.com/thenativeweb/nodeenv/compare/3.0.71...3.0.72) (2022-01-09)
+
+
+### Bug Fixes
+
+* bump @types/node from 17.0.5 to 17.0.7 ([#505](https://github.com/thenativeweb/nodeenv/issues/505)) ([8300a54](https://github.com/thenativeweb/nodeenv/commit/8300a54b19d3761b08c60aa1407e4a526058ad80))
+
 ## [3.0.71](https://github.com/thenativeweb/nodeenv/compare/3.0.70...3.0.71) (2021-08-16)
 
 
