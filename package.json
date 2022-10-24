@@ -24,7 +24,7 @@
   "main": "build/lib/nodeenv.js",
   "types": "build/lib/nodeenv.d.ts",
   "dependencies": {
-    "@types/node": "18.11.0"
+    "@types/node": "18.11.4"
   },
   "devDependencies": {
     "assertthat": "6.5.2",
